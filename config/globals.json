@@ -1,0 +1,22 @@
+{
+  "local": {
+    "port": 8500,
+    "version": "/v0",
+    "nosqlDB":"redfox",
+    "madrillKey": ""
+  },
+
+  "remote": {
+    "port": 3000,
+    "version": "/v0",
+    "nosqlDB":"redfox",
+    "madrillKey" : ""
+  },
+
+  "production": {
+    "port": 3000,
+    "version": "/v1",
+    "nosqlDB":"redfox",
+    "madrillKey" : ""
+  }
+}
