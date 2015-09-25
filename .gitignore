@@ -1,5 +1,12 @@
-# Logs
-logs
+# Webstorm config files
+.idea/
+
+# Dependency directory
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+node_modules/
+
+# Logging files
+logs/
 *.log
 
 # Runtime data
@@ -21,7 +28,3 @@ coverage
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
-
-# Dependency directory
-# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
-node_modules
