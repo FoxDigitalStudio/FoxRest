@@ -19,7 +19,7 @@
     "webservice"
   ],
   "author": "Alejandro Mantilla <@AlejoJamC>",
-  "license": "MIT",
+  "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/FoxDigitalStudio/RedFoxRest/issues"
   },
