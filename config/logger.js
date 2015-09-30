@@ -57,6 +57,7 @@ var logger = new (winston.Logger)({
 });
 
 module.exports.logger = logger;
+// TODO: Revisar la configuracion de winston + morgan
 /**module.exports.stream = {
     write: function(message, encoding){
         logger.info(message);
