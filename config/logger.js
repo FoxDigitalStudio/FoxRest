@@ -7,11 +7,13 @@
  */
 
 /**
- * Module dependencies
+ * Load required packages
  */
 var fs = require('fs');
 var path = require('path');
 var winston = require('winston');
+
+// Emits an 'error' event which you should handle or suppress
 winston.emitErrs = true;
 
 // paths of logging files
@@ -64,6 +66,7 @@ var logger = new (winston.Logger)({
     exitOnError: false
 });
 
+// Exports the logging tool
 module.exports.logger = logger;
 // TODO: Revisar la configuracion de winston + morgan
 /**module.exports.stream = {

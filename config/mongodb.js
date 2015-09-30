@@ -7,7 +7,7 @@
  */
 
 /**
- * Module dependencies required
+ * Load required packages
  */
 var logger = require('../config/logger').logger;
 var mongoose = require('mongoose');
