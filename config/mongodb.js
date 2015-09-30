@@ -1,8 +1,7 @@
 /**
  * Module dependencies required
  */
-var Logger = require('../config/logger');
-var logger = Logger.logger;
+var logger = require('../config/logger').logger;
 var mongoose = require('mongoose');
 
 /**
@@ -15,13 +14,13 @@ var mongoose = require('mongoose');
 function setupMongoDB (DBName){
     //Connect to database
     mongoose.connect('mongodb://localhost:27017/' + DBName);
-    logger.info('Conetandose al servidor de MongDB, base de datos: ' + DBName);
+    logger.info('Connecting to MongoDB server, database: ' + DBName);
 
     var con = mongoose.connection;
 
     // show in logger connection status
     con.once('open', function () {
-        logger.info('Conectado al servidor MongoDB correctamente!');
+        logger.info('Connected to MongoDB successfully!');
     });
 }
 
